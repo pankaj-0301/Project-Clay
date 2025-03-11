@@ -1,0 +1,61 @@
+{
+  "schema": [
+    {
+      "id": "personalInfo",
+      "type": "section",
+      "label": "Personal Information",
+      "fields": [
+        {
+          "id": "name",
+          "type": "text",
+          "label": "Full Name",
+          "required": true
+        },
+        {
+          "id": "email",
+          "type": "email",
+          "label": "Email",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "type": "section",
+      "label": "Education",
+      "fields": [
+        {
+          "id": "degree",
+          "type": "select",
+          "label": "Degree",
+          "required": true,
+          "options": ["Bachelor's", "Master's", "PhD", "Other"]
+        },
+        {
+          "id": "major",
+          "type": "text",
+          "label": "Major",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "workExperience",
+      "type": "section",
+      "label": "Work Experience",
+      "fields": [
+        {
+          "id": "currentlyEmployed",
+          "type": "checkbox",
+          "label": "Currently Employed"
+        },
+        {
+          "id": "yearsOfExperience",
+          "type": "select",
+          "label": "Years of Experience",
+          "options": ["0-2", "3-5", "5-10", "10+"]
+        }
+      ]
+    }
+  ]
+}
